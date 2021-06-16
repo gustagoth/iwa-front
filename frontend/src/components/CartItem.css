@@ -1,0 +1,75 @@
+.cartitem {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+  gap: 8 px;
+  place-items: center;
+  border: 1px solid #00ff41;
+}
+
+.cartitem__name {
+    text-decoration: none;
+    color: #00ff41;
+}
+
+.cartitem__name:hover {
+    color: #ff00be;
+}
+
+.cartitem__select {
+    padding: 7px 12px;
+    outline: none;
+    font-family: VCR OSD Mono;
+    background-color: #0D0208;
+    color:#00ff41;
+    border: 1px solid #00ff41;
+}
+
+.cartitem__price {
+    color: #00ff41;
+}
+
+.cartitem__deleteBtn {
+    padding: 7px 12px;
+    color: #00ff41;
+    background: #0D0208;
+    border: 1px solid #00ff41;
+    cursor: pointer;
+}
+
+.cartitem__deleteBtn:hover{
+    color: #ff00be;
+    border: 1px solid #ff00be;
+}
+
+@media (max-width: 700px){
+    .cartitem__name {
+        font-size: 0.8rem;
+    }
+
+    .cartitem__select,
+    .cartitem__deleteBtn{
+        padding: 4px 8px;
+    }
+
+    .cartitem__price {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px){
+    .cartitem__name {
+        font-size: 0.6rem;
+    }
+
+    .cartitem__select,
+    .cartitem__deleteBtn{
+        padding: 1.5px 5px;
+    }
+
+    .cartitem__price {
+        font-size: 0.6rem;
+    }
+}
